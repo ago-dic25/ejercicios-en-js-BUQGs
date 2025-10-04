@@ -1,0 +1,67 @@
+:root{
+    --primary-color: #333;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('background.jpg');
+}
+
+.save button{
+    background-color: rgba(196, 80, 80, 0.6); 
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.save button:hover{
+    background-color: #ae3939;
+}
+
+.key {
+    border: 0.4rem solid black;
+    border-radius: 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(105, 53, 53, 0.4);
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+}
+
+.key kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.key .sound {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+}
+
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.key:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgba(0,0,0,0.6);
+    background: rgba(105, 53, 53, 0.6);
+}
